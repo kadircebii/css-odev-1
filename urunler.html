@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kodluyoruz Css Ödev-1</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      text-align: center;
+    }
+    h1 {
+      margin-top: 30px;
+      color: darkblue;
+    }
+    nav ul li {
+      display: inline-block;
+      margin: 0 20px;
+    }
+    h3 {
+      font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+      color: red;
+      font-size: 30px;
+    }
+    h4 {
+      color: goldenrod;
+    }
+    .urun_tanitim li a {
+      list-style-type: disc;
+      line-height: 25px;
+      text-decoration: none;
+    }
+    .urunler {
+      width: 100%;
+      height: 400px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .urunler .urunler_box {
+      width: 300px;
+      height: 300px;
+      background-color: aquamarine;
+      margin: 0 20px;
+    }
+    .urunler_box img {
+      width: 300px;
+      height: 300px;
+      object-fit: cover;
+    }
+  </style>
+  <body>
+    <h1>Müzik Aletleri Mağazası</h1>
+    <br />
+    <!--Header - Start-->
+    <nav>
+      <ul>
+        <li><a href="index.html">Ana Sayfa</a></li>
+        <li><a href="urunler.html">Ürünlerimiz</a></li>
+        <li><a href="hakkimizda.html">Hakkımızda</a></li>
+      </ul>
+    </nav>
+    <!--Header - End-->
+    <!-- Content - Start -->
+    <br />
+    <h3>Ürünlerimiz</h3>
+
+    <section class="urunler">
+      <div class="urunler_box">
+        <img src="./images/gitar.jpeg" alt="" />
+        <br />
+        <p>Gitar</p>
+      </div>
+      <div class="urunler_box">
+        <img src="./images/bas-gitar.jpg" alt="" />
+        <br />
+        <p>Bas Gitar</p>
+      </div>
+      <div class="urunler_box">
+        <img src="./images/zurna.jpg" alt="" />
+        <br />
+        <p>Zurna</p>
+      </div>
+      <div class="urunler_box">
+        <img src="./images/keman.jpg" alt="" />
+        <br />
+        <p>Keman</p>
+      </div>
+    </section>
+
+    <!-- Content - End -->
+  </body>
+</html>
